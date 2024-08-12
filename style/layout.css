@@ -52,3 +52,47 @@ aside {
         }
     }
 }
+
+@media (width <= 22.562rem) {
+
+    #app {
+        overflow: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    } 
+
+    main {
+        overflow: unset;
+        padding: 2rem;
+    }
+
+    aside {
+        overflow: unset;
+        padding: 1.5rem;
+
+        & .aside-container {
+
+            & header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            & header img {
+                width: 12.68rem;
+            }
+
+            & img {
+                width: 19.5rem;
+            }
+            
+            & header > h2,
+            & header > p {
+                display: none;
+            }
+    
+        }
+    }
+
+}

@@ -54,3 +54,11 @@ img {
 .flex-2 {
     flex: 2;
 }
+
+@media (width <= 22.562rem) {
+
+    body {
+        overflow: unset;
+    }    
+
+}
